@@ -1,0 +1,51 @@
+@import "../../../styles/variables";
+
+.cta-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  background-color: transparent;
+  color: white;
+  padding: 1em 2em;
+  cursor: pointer;
+  font-size: $font-size-cta;
+  border: none;
+  border-radius: 30px;
+  background: $color-bg;
+
+  &:hover {
+    z-index: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 102%;
+    height: 105%;
+    background: linear-gradient(270deg, $color-pink, $color-blue);
+    background-size: 200% 200%;
+    margin: auto;
+    z-index: -1;
+    border-radius: inherit;
+    animation: borderAnimation 10s ease infinite;
+  }
+
+  &:hover::before {
+    background-image: linear-gradient(to left, $color-pink, $color-blue);
+  }
+}
+
+// animation for button border
+@keyframes borderAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

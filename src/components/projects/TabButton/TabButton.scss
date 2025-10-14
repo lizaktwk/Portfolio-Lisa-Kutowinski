@@ -1,0 +1,39 @@
+@import "../../../styles/variables";
+
+.tabs {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  //   border: 3px solid green;
+  //   z-index: 1;
+
+  li {
+    list-style: none;
+    // z-index: 1;
+
+    .gradient-border {
+      padding: 2px;
+      border-radius: 30px;
+      background: $color-gradient;
+      display: inline-block;
+
+      button {
+        background: $color-bg;
+        font-size: $font-size-tab;
+        border: none;
+        color: white;
+        border-radius: inherit;
+        padding: 0.5em 1.5em;
+        cursor: pointer;
+      }
+
+      .active,
+      button:hover {
+        background-image: $color-gradient;
+      }
+    }
+  }
+}

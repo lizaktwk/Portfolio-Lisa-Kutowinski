@@ -1,0 +1,47 @@
+@import "./variables";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: $color-bg;
+  font-family: $font-main;
+  color: $color-text;
+  background-color: $color-bg;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // border: 3px solid red;
+}
+
+h1 {
+  background: linear-gradient(to right, #b76de0, $color-blue);
+  font-weight: bold;
+  font-size: $font-size-heading1;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  width: fit-content;
+}
+
+h2 {
+  font-size: $font-size-heading2;
+  text-align: center;
+  // margin-bottom: 1rem;
+}
+
+p {
+  font-size: $font-size-paragraph;
+  line-height: 1.5;
+}
+.section {
+  // z-index: 1;
+}
