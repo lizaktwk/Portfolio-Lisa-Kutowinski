@@ -29,11 +29,16 @@
     margin: auto;
     z-index: -1;
     border-radius: inherit;
-    animation: borderAnimation 10s ease infinite;
+    animation: borderAnimation 8s ease infinite;
   }
 
   &:hover::before {
     background-image: linear-gradient(to left, $color-pink, $color-blue);
+  }
+
+  &:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
   }
 }
 

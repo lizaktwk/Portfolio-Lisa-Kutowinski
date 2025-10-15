@@ -1,20 +1,15 @@
-@import "../../styles/variables";
+@import "../../styles/variables.scss";
 
-.projects-section {
-  z-index: 1;
-  // border: 3px solid blue;
-}
-.projects {
+.technologies {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
 }
 
-.projects-list {
+.technologies-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 0.5rem;
   width: $section-width;
   //   border: 3px solid green;
 }

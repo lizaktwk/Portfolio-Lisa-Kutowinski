@@ -28,13 +28,3 @@ export default function Projects({ selectedCategory }) {
     </section>
   );
 }
-
-// .map((project) => (
-//   <ProjectCard
-//     key={project.id}
-//     title={project.title}
-//     image={project.image}
-//     repoURL={project.repoURL}
-//     liveURL={project.liveURL}
-//   />
-// ))

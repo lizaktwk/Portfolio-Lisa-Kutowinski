@@ -1,0 +1,10 @@
+@import "../../../styles/variables";
+
+.vertical-divider {
+  height: 150px;
+  width: $divider-height;
+  background: linear-gradient($color-pink, $color-blue);
+  position: relative;
+  left: 50%;
+  margin: 2rem 0 0.5rem 0;
+}

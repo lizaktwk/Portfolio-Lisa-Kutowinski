@@ -5,6 +5,7 @@ $font-heading: "Instrument Sans", sans-serif;
 // Font Sizes
 $font-size-heading1: 2.5rem;
 $font-size-heading2: 2rem;
+$font-size-heading3: 1.2rem;
 $font-size-paragraph: 1.2rem;
 $font-size-cta: 1.2rem;
 $font-size-tab: 1rem;
@@ -22,6 +23,17 @@ $nav-hover-bg: linear-gradient(
   rgba(84, 84, 84, 0.527) 10%,
   rgba(135, 135, 135, 0.274) 85%
 );
+
+// Card Stylings (Projects, TechStack)
+$card-border-radius: 10px;
+$card-border: 1px solid rgba(255, 255, 255, 0.15);
+$card-bg: rgba(218, 218, 218, 0.1);
+
+// Divider size
+$divider-height: 3px;
+
+// section width
+$section-width: 80%;
 
 // Breakpoints
 $breakpoint-md: 768px;
