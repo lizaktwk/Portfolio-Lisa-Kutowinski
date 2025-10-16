@@ -1,4 +1,5 @@
 import Navbar from "./components/layout/NavBar/Nav";
+import MobileMenu from "./components/layout/MobileMenu/MobileMenu";
 import Hero from "./components/Hero/Hero";
 import VerticalDivider from "./components/common/VerticalDivider/VerticalDivider";
 import SectionHeading from "./components/common/SectionHeading/SectionHeading";
@@ -12,6 +13,8 @@ import { projects } from "./data/projects";
 import { useState } from "react";
 
 function App() {
+  const isMobile = window.innerWidth < 768;
+
   const [selectedCategory, setSelectedCategory] = useState("all");
   const handleSelect = (category) => {
     setSelectedCategory(category);
@@ -30,10 +33,14 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      {isMobile ? <MobileMenu /> : <Navbar />}
       <Hero />
       <VerticalDivider />
-      <SectionHeading title="Projects" headingCategory="stripes" />
+      <SectionHeading
+        id="projects"
+        title="Projects"
+        headingCategory="stripes"
+      />
       <section>
         <menu className="tabs">
           <TabButton
@@ -59,11 +66,16 @@ function App() {
       </section>
       <VerticalDivider />
       <SectionHeading
+        id="tech"
         title="What I Use to Build Stuff"
         headingCategory="stripes"
       />
       <Technologies />
-      <SectionHeading title="Contact" headingCategory="underlined" />
+      <SectionHeading
+        id="contact"
+        title="Contact"
+        headingCategory="underlined"
+      />
       <Contact />
 
       {/* <WhatICanDo

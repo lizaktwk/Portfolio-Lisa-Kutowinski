@@ -1,8 +1,8 @@
 import "./SectionHeading.scss";
 
-export default function SectionHeading({ title, headingCategory }) {
+export default function SectionHeading({ id, title, headingCategory }) {
   return (
-    <div className={`${headingCategory}`}>
+    <div className={`${headingCategory}`} id={id}>
       <h2>{title}</h2>
     </div>
   );

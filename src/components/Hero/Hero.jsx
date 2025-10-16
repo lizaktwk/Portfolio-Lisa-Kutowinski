@@ -4,7 +4,7 @@ import CTAButton from "../common/CTA/CTAButton";
 
 export default function Hero() {
   return (
-    <section className="section hero">
+    <section className="section hero" id="home">
       <div className="hero-content">
         <h1>
           Frontend <br />
@@ -19,7 +19,7 @@ export default function Hero() {
           </span>
         </p>
         <img src={profileImg} alt="This is Me" />
-        <CTAButton>Get in Touch</CTAButton>
+        <CTAButton title="Get in Touch" whatToDo="scrollToContact" />
       </div>
     </section>
   );

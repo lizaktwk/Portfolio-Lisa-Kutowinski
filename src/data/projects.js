@@ -2,6 +2,7 @@ import pomodoroImg from "../assets/projects/pomodoro.png";
 import weatherImg from "../assets/projects/weather.png";
 import todoImg from "../assets/projects/todo.png";
 import kanbanImg from "../assets/projects/kanban.png";
+import gardeningImg from "../assets/projects/kertgondozás.png";
 
 export const projects = [
   {
@@ -42,5 +43,15 @@ export const projects = [
     image: kanbanImg,
     repoURL: "https://github.com/lizaktwk/Kanban",
     liveURL: "https://lizaktwk.github.io/Kanban/",
+  },
+  {
+    id: 5,
+    title: "Landingpage for a Gardening Service in Hungary",
+    description:
+      "A landingpage for a Hungarian gardening service. Designed with Figma and built with HTML and CSS.",
+    category: "uxui",
+    image: gardeningImg,
+    repoURL: "https://github.com/lizaktwk/Kanban",
+    liveURL: "https://github.com/lizaktwk/Kanban",
   },
 ];
