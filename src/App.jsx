@@ -5,10 +5,12 @@ import VerticalDivider from "./components/common/VerticalDivider/VerticalDivider
 import SectionHeading from "./components/common/SectionHeading/SectionHeading";
 import TabButton from "./components/projects/TabButton/TabButton";
 import Projects from "./components/projects/Projects";
-import ProjectCard from "./components/projects/ProjectCard/ProjectCard";
+// import ProjectCard from "./components/projects/ProjectCard/ProjectCard";
 import WhatICanDo from "./components/skills/WhatICanDo";
 import Technologies from "./components/Tech/Technologies";
 import Contact from "./components/contact/Contact";
+// import ProjectPopUp from "./components/projects/ProjectPopUp/ProjectPopUp";
+import Footer from "./components/layout/Footer/Footer";
 import { projects } from "./data/projects";
 import { useState } from "react";
 
@@ -77,6 +79,7 @@ function App() {
         headingCategory="underlined"
       />
       <Contact />
+      <Footer />
 
       {/* <WhatICanDo
         title="Frontend Dev"
@@ -86,16 +89,6 @@ function App() {
         title="UX/UI Design"
         description="Thoughtful design of both aesthetically pleasing and functional User Interfaces."
       /> */}
-
-      {/* <div>
-        Icon Links:
-        <a href="https://www.flaticon.com/free-icons/eye" title="eye icons">
-          Eye icons created by Gregor Cresnar - Flaticon
-        </a>
-        <a href="https://www.flaticon.com/free-icons/info" title="info icons">
-          Info icons created by Freepik - Flaticon
-        </a>
-      </div> */}
     </>
   );
 }

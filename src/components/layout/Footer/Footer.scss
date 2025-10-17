@@ -1,0 +1,67 @@
+@import "../../../styles/variables.scss";
+
+.footer {
+  margin-top: 5rem;
+  padding: 1rem;
+  width: 100%;
+  border-top: 1px solid #383838;
+  color: $footer-text;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .impressum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 0.8rem;
+
+    h2 {
+      font-weight: normal;
+      font-size: 1.2rem;
+    }
+
+    .contact-information {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-top: 1rem;
+
+      p {
+        font-size: inherit;
+      }
+    }
+
+    a {
+      color: $footer-text;
+      text-decoration: underline;
+    }
+
+    button {
+      margin-top: 1rem;
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      border-radius: 30px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: $footer-text;
+      background: transparent;
+      cursor: pointer;
+
+      &:active {
+        transform: scale(0.98);
+        transition: transform 0.1s ease;
+      }
+    }
+
+    .impressum-content {
+      h1 {
+        color: white;
+      }
+      line-height: 1.5;
+    }
+  }
+}
