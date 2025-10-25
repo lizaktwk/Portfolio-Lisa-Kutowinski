@@ -20,7 +20,6 @@ function App() {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const handleSelect = (category) => {
     setSelectedCategory(category);
-    console.log(selectedCategory);
   };
 
   let tabContent = <p>Please select a topic.</p>;

@@ -1,4 +1,5 @@
 import "./CTAButton.scss";
+import resume from "../../../assets/CV_Kutowinski_Lisa.pdf";
 
 export default function CTAButton({ title, whatToDo }) {
   function handleClick() {
@@ -6,7 +7,7 @@ export default function CTAButton({ title, whatToDo }) {
       const contactSection = document.getElementById("contact");
       contactSection.scrollIntoView({ behavior: "smooth" });
     } else if (whatToDo === "openResume") {
-      window.open("path/to/resume.pdf", "_blank");
+      window.open(resume, "_blank");
     }
   }
 

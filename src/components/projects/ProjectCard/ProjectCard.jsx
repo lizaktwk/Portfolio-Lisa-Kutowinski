@@ -4,8 +4,15 @@ import { useState } from "react";
 import infoIcon from "../../../assets/icons/info-icon.png";
 import githubIcon from "../../../assets/icons/github-icon.png";
 import eyeIcon from "../../../assets/icons/eye-icon.png";
+// import projects from "../../../data/projects.js";
 
-export default function ProjectCard({ title, image, repoURL, liveURL }) {
+export default function ProjectCard({
+  title,
+  image,
+  repoURL,
+  liveURL,
+  category,
+}) {
   const [isOpen, setIsOpen] = useState(false);
 
   if (isOpen) {
@@ -13,6 +20,8 @@ export default function ProjectCard({ title, image, repoURL, liveURL }) {
       <ProjectPopUp projectTitle={title} onClose={() => setIsOpen(false)} />
     );
   }
+
+  // const project = projects.find((p) => p.title === title);
 
   return (
     <div className="project-card">
@@ -26,18 +35,24 @@ export default function ProjectCard({ title, image, repoURL, liveURL }) {
           >
             <img src={infoIcon} alt="Project Info" />
           </button>
-          <button
-            className="project-detail-btn"
-            onClick={() => window.open(repoURL, "_blank")}
-          >
-            <img src={githubIcon} alt="View Code" />
-          </button>
-          <button
-            className="project-detail-btn"
-            onClick={() => window.open(liveURL, "_blank")}
-          >
-            <img src={eyeIcon} alt="View Project" />
-          </button>
+          {category === "frontend" && (
+            <>
+              <button
+                className="project-detail-btn"
+                onClick={() => window.open(repoURL, "_blank")}
+              >
+                <img src={githubIcon} alt="View Code" />
+              </button>
+            </>
+          )}
+          {liveURL && (
+            <button
+              className="project-detail-btn"
+              onClick={() => window.open(liveURL, "_blank")}
+            >
+              <img src={eyeIcon} alt="View Project" />
+            </button>
+          )}
         </div>
       </div>
     </div>
