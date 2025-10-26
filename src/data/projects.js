@@ -129,7 +129,7 @@ export const projects = [
     category: ["uxui", "frontend"],
     type: "Personal Project",
     image: portfolioImg,
-    repoURL: "https://github.com/lizaktwk/portfolio",
+    repoURL: "https://lizaktwk.github.io/Portfolio-Lisa-Kutowinski/",
     // liveURL: "https://lizaktwk.github.io/portfolio/",
     features: [
       "Clean and modern design",
